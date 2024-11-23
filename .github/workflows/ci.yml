@@ -28,17 +28,16 @@ jobs:
           distribution: temurin
           cache: gradle
 
-      - name: Install NDK
-        uses: nttld/setup-ndk@v1
-        with:
-          ndk-version: r28-beta2
-          local-cache: true
+      - name: Accepte Licences
+        run: |
+          echo "24333f8a62f6825ea9d5514f83c2829b004h1fee" > ~/Android/Sdk/licenses/android-sdk-license
+          echo "84838b9409646a918e30573bab4f9c91346d8abd" > ~/Android/Sdk/licenses/android-sdk-preview-license
 
       - name: Build app
         run: ./gradlew assembleRelease --no-daemon --warning-mode all
 
       - name: Upload Apk
-        if: github.repository == 'topminipie/twoyi'
+        if: github.repository == 'topminipie/ByeDPIAndroid'
         uses: actions/upload-artifact@v4
         with:
           name: apk
