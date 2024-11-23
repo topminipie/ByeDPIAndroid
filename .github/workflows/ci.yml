@@ -28,6 +28,12 @@ jobs:
           distribution: temurin
           cache: gradle
 
+      - name: Install NDK
+        uses: nttld/setup-ndk@v1
+        with:
+          ndk-version: r28-beta2
+          local-cache: true
+
       - name: Build app
         run: ./gradlew assembleRelease --no-daemon --warning-mode all
 
