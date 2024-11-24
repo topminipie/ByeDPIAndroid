@@ -64,7 +64,7 @@ android {
 }
 
 dependencies {
-    implementation("androidx.fragment:fragment-ktx:1.8.4")
+    implementation("androidx.fragment:fragment-ktx:1.8.5")
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("androidx.preference:preference-ktx:1.2.1")
