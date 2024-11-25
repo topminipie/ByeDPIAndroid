@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "io.github.dovecoteescapee.byedpi"
-    compileSdk = 34
+    compileSdk = 35
     ndkVersion = "28.0.12674087"
 
     defaultConfig {
@@ -64,14 +64,14 @@ android {
 }
 
 dependencies {
-    implementation("androidx.fragment:fragment-ktx:1.8.4")
-    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.fragment:fragment-ktx:1.8.5")
+    implementation("androidx.core:core-ktx:1.15.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("androidx.preference:preference-ktx:1.2.1")
     implementation("com.takisoft.preferencex:preferencex:1.1.0")
     implementation("com.google.android.material:material:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
-    implementation("androidx.lifecycle:lifecycle-service:2.8.6")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+    implementation("androidx.lifecycle:lifecycle-service:2.8.7")
 }
 
 tasks.register<Exec>("runNdkBuild") {
