@@ -6,7 +6,7 @@ plugins {
 android {
     namespace = "io.github.dovecoteescapee.byedpi"
     compileSdk = 35
-    ndkVersion = "28.0.12674087"
+    ndkVersion = "25.2.9519653"
 
     defaultConfig {
         applicationId = "io.github.romanvht.byedpi"
