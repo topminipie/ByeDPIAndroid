@@ -11,9 +11,10 @@ android {
     defaultConfig {
         applicationId = "io.github.romanvht.byedpi"
         minSdk = 21
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 10
-        versionName = "1.3.9"
+        versionName = "1.4.0"
 
         ndk {
             abiFilters.add("armeabi-v7a")
